@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.nav-items {
+    padding: 0px 20px;
+}
+
+.nav-items > ul{
+    display: flex;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+    font-size: large;
+    list-style-type: none;
+}
+
+.logo-container {
+    border: 1px;
+    border-color: black;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.cart {
+    height: 20px;
+    width: 30px;
+}
+
+
+.cart-nav-item {
+    display: flex;
+}
