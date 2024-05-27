@@ -12,6 +12,11 @@
     display: flex;
 }
 
+.nav-items > ul > li:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
 .nav-items > ul > li {
     padding: 10px;
     margin: 10px;
@@ -37,4 +42,40 @@
 
 .cart-nav-item {
     display: flex;
+}
+
+
+.restaurant-image {
+    height: 250px;
+    width:250px;
+}
+
+.restaurant-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.restaurant-card-container {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    width: 250px;
+}
+
+.restaurant-card-container > h3,h4 {
+    padding-left: 10px;
+    margin: 5px 0px;
+}
+
+.search-container {
+    margin: 20px;;
+}
+
+.restaurant-card-container:hover {
+    border: 1px solid orangered;
+    cursor: pointer;
+}
+.star-rating {
+    color: gold;
 }
