@@ -1,17 +1,23 @@
 import { RestaurantCard } from "./RestaurantCard";
-import { resObject } from "../utils/mockData"; 
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 
 export const Body = () => {
 
-    const resList = resObject.data.restaurants;
-    const [restaurantList, setRestaurantList] = useState(resList);
+    const [restaurantList, setRestaurantList] = useState();
+
+    useEffect(()=> {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=16.5061743&lng=80.6480153");
+        const json = await data.json();
+        setRestaurantList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    };
+
     return (
         <div className="body">
-            <div>
-                <h1> Syamala Devi</h1>
-            </div>
             <div className="search-container">
                 <input type="text" placeholder="Search text"/>
                 <input type="submit" value="Search"/>
