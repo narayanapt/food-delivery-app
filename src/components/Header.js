@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { LOGO_URL } from "../utils/constants"; 
 import { CART_URL } from "../utils/constants";
 import { useState } from "react";
+import { OnlineStatus } from "./OnlineStatus";
 
 export const Header = () => {
 
@@ -14,6 +15,7 @@ export const Header = () => {
             </div>
             <div className="nav-items">
                 <ul>
+                    <OnlineStatus />
                     <li><Link className="link-class" to="/">Home</Link></li>
                     <li><Link className="link-class" to="/about">About Us</Link></li>
                     <li><Link className="link-class" to="/contact">Contact Us</Link></li>
