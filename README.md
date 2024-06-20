@@ -1,4 +1,8 @@
-# React Project
+# React Food Delivery Project
+
+
+![alt text](./food-delivery-app.png)
+
 
 ## Parcel
 
