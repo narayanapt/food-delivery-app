@@ -34,8 +34,8 @@ Read more here - [Parcel](https://parceljs.org/)
 - - Search
 - - RestaurantContainer
 - - RestaurantCard
--      -Img
--      -Name of Res, Star Rating, Cuisine, Delivery Time
+- - Img
+- - Name of Res, Star Rating, Cuisine, Delivery Time
 - Footer
 - - CopyRight
 - - Links
