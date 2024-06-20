@@ -1,4 +1,4 @@
-# React Course
+# React Project
 
 ## Parcel
 
