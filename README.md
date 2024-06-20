@@ -27,8 +27,6 @@ Read more here - [Parcel](https://parceljs.org/)
 
 ## Food App
 
-/\*\*
-
 - Header
 - - Logo
 - - Nav Items
