@@ -8,6 +8,7 @@ export const Header = () => {
 
     const [btnStatus, setBtnStatus] = useState("login");
 
+
     return (
         <div className="header">
             <div className="logo-container">
@@ -19,6 +20,7 @@ export const Header = () => {
                     <li><Link className="link-class" to="/">Home</Link></li>
                     <li><Link className="link-class" to="/about">About Us</Link></li>
                     <li><Link className="link-class" to="/contact">Contact Us</Link></li>
+                    <li><Link className="link-class" to="/grocery">Grocery</Link></li>
                     <li className="cart-nav-item">
                         Cart
                         <div className="cart-container">    

@@ -4,11 +4,12 @@ import { ShimmerCard } from "./ShimmerCard";
 import { ItemCard } from "./ItemCard";
 import { useRestaurantMenu } from "../utils/useRestaurantMenu";
 
+
 const RestaurantMenu = () => {
 
     const {resId} = useParams();
 
-    const [restInfo, itemList] = useRestaurantMenu(resId);
+    const [itemList, restInfo] = useRestaurantMenu(resId);
 
     if(itemList.length===0) {
         let ShimmerCards = [];

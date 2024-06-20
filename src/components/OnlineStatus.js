@@ -1,20 +1,15 @@
-import { useState, useEffect } from "react";
+import { useOnlineStatus } from "../utils/useOnlineStatus";
 
 export const OnlineStatus = () => {
-    [onlineStatus, setOnlineStatus] = useState("online");
 
-    useEffect(()=> {
-        window.addEventListener("online",()=> {
-            setOnlineStatus("online");
-        });
-        window.addEventListener("offline",()=> {
-            setOnlineStatus("offline");
-        });
-    },[]);
+    [color, onlineStatus] = useOnlineStatus();
+
+    const box = {backgroundColor: color};
 
     return (
-        <li className="online-status">
+        <li style={box} className="online-status">
             Status: {onlineStatus}
         </li>
     );
 };
+
