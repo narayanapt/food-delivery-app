@@ -4,25 +4,6 @@
 ![alt text](./food-delivery-app.png)
 
 
-## Food App
-
-- Header
-- - Logo
-- - Nav Items
-- Body
-- - Search
-- - RestaurantContainer
-- - RestaurantCard
-- - Img
-- - Name of Res, Star Rating, Cuisine, Delivery Time
-- Footer
-- - CopyRight
-- - Links
-- - Address
-- - Contact
-    \*/
-
-
 ## Redux Toolkit
 
 - Install @reduxjs/toolkit and react-redux
@@ -31,12 +12,6 @@
 - slice(cartSlice)
 - dispatch(action)
 - selector
-
-## Types of Testing (developer)
-
-- Unit Testing
-- Integration Testing
-- End to End Testing
 
 ## Setting up Testing in our app
 
